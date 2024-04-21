@@ -1,0 +1,75 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+div.transactions{
+  margin-top: 10px;
+}
+
+div.transaction{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-top: 1px solid #30313d;
+}
+
+div.transaction:first-child{
+  border-top: 0;
+}
+
+div.transaction div.name{
+  font-size: 1rem;
+}
+
+div.transaction div.description{
+  font-size: .7rem;
+  color: #888;
+}
+
+div.right{
+  text-align: right;
+}
+
+div.price.green, h1.green, h1.green span{
+  color: #1c1;
+}
+
+div.price.red, h1.red, h1.red span{
+  color: #c11;
+}
+
+div.transaction div.datetime{
+  font-size: .7rem;
+  color: #888;
+}
