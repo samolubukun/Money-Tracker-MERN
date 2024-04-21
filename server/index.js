@@ -13,7 +13,7 @@ app.get('/api/test', (req, res) => {
 
 app.post('/api/transaction',async (req,res)=>{
     // connect to DB
-    const mongoUrl = 'mongodb+srv://money:D53a2ag7GvM0mb8Q@cluster0.pirvqpl.mongodb.net/moneytracker';
+    const mongoUrl = 'mongo db url here';
     //console.log(mongoUrl);
     await mongoose.connect(mongoUrl);
     // get form data 
@@ -27,7 +27,7 @@ app.post('/api/transaction',async (req,res)=>{
 
 app.get('/api/transactions',async (req,res)=>{
     // connect to DB
-    const mongoUrl = 'mongodb+srv://money:D53a2ag7GvM0mb8Q@cluster0.pirvqpl.mongodb.net/moneytracker';
+    const mongoUrl = 'mongo db url here';
     await mongoose.connect(mongoUrl);
     // get data from DB
     const transactions = await Transaction.find();
